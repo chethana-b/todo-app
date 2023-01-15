@@ -3,4 +3,5 @@ clothes
 nail paint
 jewels
 shoes
-MASTER master python
+MASTER python
+master python

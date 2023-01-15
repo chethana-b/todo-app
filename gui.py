@@ -13,6 +13,7 @@ window = sg.Window("My To-Do App",
                    font=('Helvetica', 12))
 
 while True:
+    print('--------')
     event, values = window.read()
     print(1, event)
     print(2, values)
