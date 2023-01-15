@@ -3,3 +3,4 @@ clothes
 nail paint
 jewels
 shoes
+Master Python!
