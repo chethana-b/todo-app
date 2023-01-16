@@ -1,7 +1,7 @@
 bag
 clothes
-nail paint
 jewels
 shoes
-MASTER python
-master python
+socks
+towel
+nail paint
