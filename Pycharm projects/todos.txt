@@ -3,4 +3,3 @@ clothes
 jewels
 shoes
 towel
-nail paint
