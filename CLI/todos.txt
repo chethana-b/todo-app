@@ -1,0 +1,6 @@
+bag
+clothes
+jewels
+shoes
+towel
+television

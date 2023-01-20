@@ -1,5 +1,6 @@
 #from functions import get_todos, write_todos
 import functions
+
 import time
 
 now = time.strftime("%b %d, %Y %H:%M:%S")
@@ -29,8 +30,8 @@ while True:
             new_todo = input("Enter new todo: ")
             todos[number] = new_todo + '\n'
             functions.write_todos(todos)
-        except ValueError:
-            print("The command is invalid")
+        except (ValueError, IndexError):
+            print("The command is invalid. Please enter the correct number of the todo.")
             continue
 
     elif user_action.startswith("complete"):
@@ -41,10 +42,10 @@ while True:
             todo_to_remove = todos[index].strip('\n')
             todos.pop(index)
             functions.write_todos(todos)
-            message = f"The {todo_to_remove} is removed from the list."
+            message = f"The todo '{todo_to_remove}' is removed from the list."
             print(message)
-        except ValueError:
-            print("the command  is invalid")
+        except (ValueError, IndexError):
+            print("the command  is invalid. Please enter the correct number of the todo.")
             continue
 
     elif user_action.startswith("exit"):
